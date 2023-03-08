@@ -17,12 +17,14 @@ const Registre = () => {
     useEffect(() => {
         setRole('veterinaire')
     }, []);
+    const url = 'https://api-ferme.onrender.com/users'
+
 
     const handleSubmit = (e) => {
         e.preventDefault();
         let user = { id, nomComplet, password, role, adresse, telephone };
         if (IsValidate()) {
-            fetch("http://localhost:4000/users", {
+            fetch(url, {
                 method: "POST",
                 headers: { 'content-type': 'application/json' },
                 body: JSON.stringify(user)

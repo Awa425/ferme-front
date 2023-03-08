@@ -74,7 +74,7 @@ const Navbar = () => {
             </li>
           </ul>
           <div>
-            <Link className='btn signin-btn' to="/membre/login">Sign in</Link>
+            {/* <Link className='btn signin-btn' to="/membre/login">Sign in</Link> */}
             <LogoutButton onClick={handleLogout} />
             {/* <Link className='btn signin-btn' to="/">Logout</Link> */}
 
@@ -128,7 +128,7 @@ const Navbar = () => {
             </li>
           </ul>
           <div>
-            <Link className='btn signin-btn' to="/membre/login">Sign in</Link>
+            {/* <Link className='btn signin-btn' to="/membre/login">Sign in</Link> */}
             <LogoutButton onClick={handleLogout} />
 
           </div>
@@ -180,7 +180,7 @@ const Navbar = () => {
             </li>
           </ul>
           <div>
-            <Link className='btn signin-btn' to="/membre/login">Sign in</Link>
+            {/* <Link className='btn signin-btn' to="/membre/login">Sign in</Link> */}
             <LogoutButton onClick={handleLogout} />
 
           </div>

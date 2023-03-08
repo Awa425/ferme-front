@@ -7,12 +7,14 @@ const Login = () => {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
     const history = useHistory()
+    const url = 'https://api-ferme.onrender.com/users/'
 
-    const handleSubmit = (e) => {
+
+    const handleSubmit = async (e) => {
         e.preventDefault();
         if (validation()) {
             // console.log('goddd!!!')
-            fetch('http://localhost:4000/users/' + username)
+            await fetch(url + username)
                 .then((res) => {
                     return res.json()
                 }).then((resp) => {
