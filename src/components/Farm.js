@@ -64,9 +64,6 @@ const Farm = () => {
       .then((resp) => resp.json())
       .then((result) => setDataList(result))
   }
-
-
-
   const columns = [
     { title: 'Numero', field: 'id' },
     { title: 'Nom', field: 'nomFerme' },
