@@ -51,15 +51,14 @@ const Animals = (props) => {
 
   const [dataList, setDataList] = useState([])
   const url = 'https://api-ferme.onrender.com/animals'
-  // const url = "http://localhost:4000/animals"
   const history = useHistory()
 
   useEffect(() => {
     getAnimals()
   }, [])
 
-  const getAnimals = () => {
-    fetch(url)
+  const getAnimals = async () => {
+    await fetch(url)
       .then((resp) => resp.json())
       .then((result) => setDataList(result))
   }

@@ -59,8 +59,8 @@ const Farm = () => {
     getFermes()
   }, [])
 
-  const getFermes = () => {
-    fetch(url)
+  const getFermes = async () => {
+    await fetch(url)
       .then((resp) => resp.json())
       .then((result) => setDataList(result))
   }

@@ -58,9 +58,9 @@ const Veterinarian = () => {
     getVeterinaires()
   }, [])
 
-  const getVeterinaires = () => {
+  const getVeterinaires = async () => {
     let result = []
-    fetch(url)
+    await fetch(url)
       .then((resp) => resp.json())
       .then((res) => {
         for (let i = 0; i < res.length; i++) {
