@@ -79,7 +79,7 @@ const Animals = (props) => {
     { title: 'Couleur', field: 'couleur', validate: rowData => rowData.couleur === undefined || rowData.couleur === "" ? "required" : true },
     // { title: 'Troupeaux', field: 'troupeaux', validate: rowData => rowData.troupeaux === undefined || rowData.troupeaux === "" ? "required" : true },
   ];
-  if ((localStorage.getItem('role') == 'fermier') || (localStorage.getItem('role') == 'employe')) {
+  if ((localStorage.getItem('role') === 'fermier') || (localStorage.getItem('role') === 'employe')) {
     return (
       <div className="homeFarmPage">
         <section data-aos="fade-up" className="">

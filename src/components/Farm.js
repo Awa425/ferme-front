@@ -72,7 +72,7 @@ const Farm = () => {
     // { title: 'Farm City', field: 'city' },
 
   ];
-  if (localStorage.getItem('role') == 'fermier') {
+  if (localStorage.getItem('role') === 'fermier') {
     return (
       <section data-aos="fade-up" className="section-center">
         <MaterialTable icons={tableIcons} columns={columns} data={dataList} title='Liste des fermes'

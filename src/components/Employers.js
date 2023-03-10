@@ -79,7 +79,7 @@ const Employers = () => {
     { title: 'Telephone', field: 'telephone' },
     { title: 'matricule', field: 'matricule' },
   ];
-  if (localStorage.getItem('role') == 'fermier') {
+  if (localStorage.getItem('role') === 'fermier') {
     return (
       <div className="homeFarmPage">
         <section data-aos="fade-up" className="">
